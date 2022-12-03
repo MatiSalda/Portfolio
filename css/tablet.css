@@ -1,0 +1,42 @@
+
+.containerSobreMi{
+    background-color: rgb(255, 255, 255);
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+
+}
+
+.containerHabilidades{
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+}
+
+.containerProyectos{
+    background-color: rgb(72, 72, 114);
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.darkMode{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    background-color: black;
+}
