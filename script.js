@@ -1,8 +1,8 @@
 AOS.init();
 
 window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('respmenu');
-    navbar.classList.toggle('abajo', window.scrollY > 0);
+    const header = document.getElementById('header');
+    header.classList.toggle('abajo', window.scrollY > 0);
 });
 
 addEventListener('click', () =>{
