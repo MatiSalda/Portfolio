@@ -27,8 +27,13 @@ navbar.classList.toggle('activeNavbar')
 
 const botonDark = document.getElementById('botonDark')
 const body = document.getElementById('main')
+const boton1 = document.getElementById('boton1')
+const boton2 = document.getElementById('boton2')
+
 botonDark.addEventListener('click', () =>{
     body.classList.toggle('darkMode')
+    boton1.classList.toggle('btnWDarkMode')
+    boton2.classList.toggle('btnWDarkMode')
     botonDark.classList.toggle('btnLightMode')
     
 })   
