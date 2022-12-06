@@ -27,7 +27,7 @@ html {
 }
 
 body{
-    background-color: beige;
+    background-color: rgb(245, 245, 220);
 }
 /*  EMPIEZA HOME */
 .containerHome{
@@ -47,6 +47,7 @@ body{
 .titulo .tituloHome{
     font-size: 50px;
     text-align: center;
+    line-height: 250px;
     
 }
 
@@ -62,9 +63,9 @@ font-size: 20px;
 border-radius: 15px;
 border: none;
 cursor: pointer;
--webkit-box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
--moz-box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
-box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
+-webkit-box-shadow: 0px 9px 16px -13px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 9px 16px -13px rgba(66, 68, 90, 1);
+box-shadow: 0px 9px 16px -13px rgba(66, 68, 90, 1);
 transition: all 0.3s;
 }
 
@@ -214,7 +215,7 @@ box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
 
 .header.abajo{
     backdrop-filter: blur(15px);
-    background: rgba(0, 0, 0, 0.651);
+    background: rgba(245, 245, 220, 0.466);
     transition: all 0.5s;
 }
 
@@ -268,11 +269,14 @@ box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
 }
 
 .darkMode{
-    background-color: black;
+    background-color: rgb(15, 17, 27);
     color: white;
+    transition: all 1s;
+
 }
 
 .btnWDarkMode{
     background-color: white;
     color: black;
+    transition: all 0.4s;
 }
