@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)">
     <title>Document</title>
 </head>
 <body>
+
     <header class="header" id="header">
         
 
         <nav class="navbar not-active" id="navbar">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" >Home</a>
             <a href="#sobreMi">Sobre mí</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#formacion">Formación</a>
@@ -30,23 +33,22 @@
         
     </header>
 
-
  <main id="main">
 
-    <div class="BtnDarkMode" id="botonDark">
+    <div class="btnDarkMode" id="botonDark">
         
     </div>
-    <div class="containerHome">
+    <div class="containerHome" id="home">
         <img data-aos="fade-right" src="https://scontent.fepa9-2.fna.fbcdn.net/v/t39.30808-6/309393778_403495361964357_3555889943442764901_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=6bsryvMp6aIAX9wsobi&_nc_ht=scontent.fepa9-2.fna&oh=00_AfAt37Q2oOD0naScIsnE0pIykd7vkHt-C1r4G948idlB5A&oe=63906E04" alt="" class="imagenHome">
         <h1 class="titulo tituloHome">Matias Saldaño</h1>
         <p>Estudiante de programación enfocado al Desarrollo Web Frontend. Como persona amante de los diseños intuitivos y estéticamente agradables, busco crear proyectos que brinden la mejor experiencia para el usuario.</p>
-        <div class="boton botonContacto">
-            <button>Contacto</button>
-            <button>Descargar cv</button>
+        <div class="botones">
+            <button class="botonContacto boton">Contacto</button>
+            <button class="botonDescargar boton">Descargar cv</button>
         </div>
     </div>
 
-        <div class="containerSobreMi">
+        <div class="containerSobreMi" id="sobreMi">
             <h2 class="titulo tituloSobreMi">Sobre Mi</h2>
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque error eum deleniti! Explicabo porro beatae consequuntur vel, laboriosam aperiam expedita vitae nesciunt unde aliquid quia impedit sunt voluptatem adipisci repellendus labore at rem neque, dolorem quam numquam quaerat repudiandae eos distinctio! Ipsam nostrum dolore ipsum est iure accusamus maxime!</p>
@@ -55,7 +57,7 @@
 
         </div>
 
-        <div class="containerHabilidades">
+        <div class="containerHabilidades" id="habilidades">
             <p class="titulo tituloHabilidades">Habilidades</p>
             
             <div class="habilidadIco" data-aos="fade-up"></div>
@@ -64,7 +66,7 @@
             <div class="habilidadIco" data-aos="fade-up"></div>
         </div>
 
-        <div class="containerProyectos">
+        <div class="containerProyectos" id="proyectos">
             <p class="titulo tituloProyectos">Proyectos</p>
             
             <div class="proyecto" data-aos="fade-up"></div>

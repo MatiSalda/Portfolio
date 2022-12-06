@@ -1,26 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Mono', monospace;
 }
 
 html {
-    font-size: 62.5%;
-    scrollbar-width: thin;
-    scrollbar-color:rgb(255, 0, 0) rgb(255, 0, 0);
     scroll-behavior: smooth;
+}  
+*::-webkit-scrollbar {
+    width: 5px;
 }
 
-html::-webkit-scrollbar {
-    width: 8px;
-}
+ *::-webkit-scrollbar-track {
+    background: #ffffff;
+ }
 
-html::-webkit-scrollbar-track {
-    background-color: rgb(255, 255, 255);
-}
-
-
-html::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0);
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;
+   
+    border: 0px solid #ffffff;
 }
 
 ::selection {
@@ -28,26 +26,64 @@ html::-webkit-scrollbar-thumb {
     color: white;
 }
 
+/*  EMPIEZA HOME */
 .containerHome{
-    padding-top: 50px;
+    padding-top: 0px;
     display: flex;    
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    justify-content: center;
-
-
+    justify-content: space-evenly;
 }
 
+.containerHome p {
+    font-size: 15px;
+    text-align: center;
+}
+.tituloHome{
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.boton{
+background-color: black;
+padding: 10px;
+margin: 5px;
+color: white;
+font-size: 20px;
+border-radius: 15px;
+border: none;
+cursor: pointer;
+-webkit-box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+transition: all 0.3s;
+}
+
+.boton:hover{
+transform: scale(1.1);
+}
+
+
+
+/*  TERMINA HOME */
+
+
+/* EMPIEZA SOBRE MI */
 .containerSobreMi{
     display: flex;    
     flex-direction: column;
     align-items: center;
     height: 100vh;
     justify-content: center;
-
-
 }
+
+.containerSobreMi p{
+    margin: 15px;
+    text-align: center;
+}
+/* TERMINA SOBRE MI */
 
 .containerHabilidades{
     display: flex;
@@ -100,6 +136,10 @@ max-width: 50%;
     bottom: 10px;
     background-color: black;
     cursor: pointer;
+    -webkit-box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+box-shadow: 0px 16px 20px -11px rgba(66, 68, 90, 1);
+    
 }
 
 .btnLightMode{
@@ -112,11 +152,7 @@ max-width: 50%;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
 }
-.btn{
-    width: 30px;
-    height: 30px;
-    background-color: black;
-}
+
 
 
 .barrasMenu{
@@ -157,6 +193,9 @@ max-width: 50%;
     width: 100%;
     background-color: rgb(0, 0, 0);
     height: 40px;
+    -webkit-box-shadow: 0px 26px 20px -20px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 26px 20px -20px rgba(66, 68, 90, 1);
+    box-shadow: 0px 26px 20px -20px rgba(66, 68, 90, 1);
 }
 
 .header.abajo{
@@ -164,11 +203,29 @@ max-width: 50%;
     background: rgba(0, 0, 0, 0.651);
     transition: all 0.5s;
 }
-.not-active{
-    transform: translate(0,-100%);
-    transition: transform 0.5s;
-}
 
+.not-active{
+    transform: translate(0,-100%);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.4s;
+}
+.not-active a{
+    opacity: 1;
+    display: none;
+    z-index: 6;
+      color: black;
+      text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.4s;
+    
+}
 
 .activeNavbar{
     transform: translate(0);
@@ -180,7 +237,7 @@ max-width: 50%;
     align-items: center;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    transition: transform 0.5s;
+    transition: all 0.4s;
     
 }
 
@@ -196,8 +253,7 @@ max-width: 50%;
     background-color: rgb(0, 0, 0);
 }
 
-
-
 .darkMode{
     background-color: black;
+    
 }
