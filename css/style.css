@@ -54,6 +54,7 @@ body{
     margin-top: 10px;
 }
 .boton{
+    text-decoration: none;
 background-color: black;
 padding: 10px;
 margin: 5px;
@@ -109,9 +110,12 @@ transform: scale(1.1);
 
 
 }
+
 .tituloHabilidades{
-font-size: 15px;
+font-size: 25px;
+text-align: center;
 }
+
 .containerProyectos{
     display: flex;   
     flex-direction: column;
@@ -135,6 +139,8 @@ justify-content: center;
     margin: 10px;
 }
 .formulario input, .formulario textarea{
+
+
 margin: 1rem;
 border: solid black 1px;
 border-radius: 6px;
@@ -146,13 +152,21 @@ max-width: 50%;
 
 
 .habilidadIco{
-    width: 200px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     background-color: black;
-    border-radius: 15%;
+    border-radius: 100px;
     margin: 5px;
 }
 
+.habilidadIco img{
+    max-width: 60%;
+    max-height: 60%;
+}
 .proyecto{
     width: 200px;
     height: 200px;
@@ -297,4 +311,8 @@ box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
     background-color: white;
     color: black;
     transition: all 0.4s;
+}
+
+.habilidadIco{
+    
 }
