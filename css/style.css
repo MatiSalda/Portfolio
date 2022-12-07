@@ -47,8 +47,7 @@ body{
 .titulo .tituloHome{
     font-size: 50px;
     text-align: center;
-    line-height: 250px;
-    
+    letter-spacing: 0px;    
 }
 
 .imagenHome{
@@ -122,6 +121,25 @@ font-size: 15px;
 
 }
 
+.contacto{
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.formulario input, .formulario textarea{
+margin: 1rem;
+border: solid black 1px;
+border-radius: 6px;
+text-align: center;
+}
 .imagenHome, .imagenSobreMi{
 max-width: 50%;
 }
@@ -215,8 +233,8 @@ box-shadow: 0px 16px 20px -11px rgb(0, 0, 0);
 
 .header.abajo{
     backdrop-filter: blur(15px);
-    background: rgba(245, 245, 220, 0.466);
-    transition: all 0.5s;
+    background: rgba(92, 92, 92, 0.199);
+    transition: all 0.85s;
 }
 
 .not-active{
